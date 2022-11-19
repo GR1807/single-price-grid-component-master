@@ -1,0 +1,117 @@
+:root {
+	--primary: hsl(179, 62%, 43%);
+	--secondary: hsl(71, 73%, 54%);
+	--third: hsl(165, 54%, 43%);
+	--first-neutral-color: hsl(204, 43%, 93%);
+	--second-neutral-color: hsl(218, 22%, 67%);
+	font-size: 10px;
+}
+body {
+	font-family: "Karla", sans-serif;
+	background-color: (var(--first-neutral-color));
+}
+.section-margin {
+	margin: 0 3rem;
+}
+.wrapper {
+	font-size: 1.6rem;
+	width: 100vw;
+	height: 100vh;
+	margin-top: 5rem;
+}
+
+.join-us {
+	box-shadow: 0px 0px 30px -16px rgba(66, 68, 90, 1);
+	background-color: white;
+	h2 {
+		font-size: 2rem;
+		color: (var(--primary));
+		font-weight: bold;
+		padding: 2.5rem 0;
+		margin: 0;
+	}
+	.first-paragraph {
+		color: (var(--secondary));
+		font-weight: bold;
+		margin: 0;
+	}
+	.second-paragraph {
+		font-size: 1.5rem;
+		color: (var(--second-neutral-color));
+		padding: 1.5rem 0 3.2rem 0;
+	}
+}
+.pay {
+	box-shadow: 0px 0px 30px -16px rgba(66, 68, 90, 1);
+	background-color: (var(--third));
+	h3 {
+		color: (var(--first-neutral-color));
+		font-size: 1.8rem;
+		font-weight: 500;
+		padding: 2.5rem 0 1.6rem 0;
+		margin: 0;
+	}
+	p {
+		color: (var(--first-neutral-color));
+		margin: 0;
+	}
+	.price {
+		display: flex;
+		align-items: center;
+		span {
+			padding-left: 1.2rem;
+			color: (var(--first-neutral-color));
+		}
+	}
+	.pay-first-paragraph {
+		font-size: 3rem;
+		font-weight: bold;
+	}
+	.button-area {
+		button {
+			width: 100%;
+			background-color: (var(--secondary));
+			margin: 2.7rem 0;
+			padding: 1.2rem 0;
+			border: none;
+			border-radius: 0.5rem;
+			box-shadow: 0px 0px 30px -16px rgba(66, 68, 90, 1);
+			color: white;
+			transition: 0.5s;
+		}
+	}
+}
+.rtb {
+	box-shadow: 0px 0px 30px -16px rgba(66, 68, 90, 1);
+	background-color: (var(--primary));
+	p {
+		color: (var(--first-neutral-color));
+		margin: 0;
+	}
+	h3 {
+		color: white;
+		font-size: 1.8rem;
+		padding: 2.5rem 0;
+		margin: 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.wrapper {
+		height: 50vh;
+	}
+	main {
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.section-margin {
+		margin: 0;
+	}
+	.pay .button-area button:hover {
+		background-color: black;
+	}
+}

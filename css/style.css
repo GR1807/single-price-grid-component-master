@@ -1,0 +1,150 @@
+:root {
+  --primary: hsl(179, 62%, 43%);
+  --secondary: hsl(71, 73%, 54%);
+  --third: hsl(165, 54%, 43%);
+  --first-neutral-color: hsl(204, 43%, 93%);
+  --second-neutral-color: hsl(218, 22%, 67%);
+  font-size: 10px;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: var(--first-neutral-color);
+}
+
+.section-margin {
+  margin: 0 3rem;
+}
+
+.wrapper {
+  font-size: 1.6rem;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 5rem;
+}
+
+.join-us {
+  -webkit-box-shadow: 0px 0px 30px -16px #42445a;
+          box-shadow: 0px 0px 30px -16px #42445a;
+  background-color: white;
+}
+
+.join-us h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  font-weight: bold;
+  padding: 2.5rem 0;
+  margin: 0;
+}
+
+.join-us .first-paragraph {
+  color: var(--secondary);
+  font-weight: bold;
+  margin: 0;
+}
+
+.join-us .second-paragraph {
+  font-size: 1.5rem;
+  color: var(--second-neutral-color);
+  padding: 1.5rem 0 3.2rem 0;
+}
+
+.pay {
+  -webkit-box-shadow: 0px 0px 30px -16px #42445a;
+          box-shadow: 0px 0px 30px -16px #42445a;
+  background-color: var(--third);
+}
+
+.pay h3 {
+  color: var(--first-neutral-color);
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 2.5rem 0 1.6rem 0;
+  margin: 0;
+}
+
+.pay p {
+  color: var(--first-neutral-color);
+  margin: 0;
+}
+
+.pay .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pay .price span {
+  padding-left: 1.2rem;
+  color: var(--first-neutral-color);
+}
+
+.pay .pay-first-paragraph {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.pay .button-area button {
+  width: 100%;
+  background-color: var(--secondary);
+  margin: 2.7rem 0;
+  padding: 1.2rem 0;
+  border: none;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0px 0px 30px -16px #42445a;
+          box-shadow: 0px 0px 30px -16px #42445a;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.rtb {
+  -webkit-box-shadow: 0px 0px 30px -16px #42445a;
+          box-shadow: 0px 0px 30px -16px #42445a;
+  background-color: var(--primary);
+}
+
+.rtb p {
+  color: var(--first-neutral-color);
+  margin: 0;
+}
+
+.rtb h3 {
+  color: white;
+  font-size: 1.8rem;
+  padding: 2.5rem 0;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    height: 50vh;
+  }
+  main {
+    height: 100vh;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-margin {
+    margin: 0;
+  }
+  .pay .button-area button:hover {
+    background-color: black;
+  }
+}
+/*# sourceMappingURL=style.css.map */
